@@ -140,3 +140,22 @@
   background-color: $current-time-color;
   pointer-events: none;
 }
+
+.rbc-current-time-indicator-shape {
+  border: solid 2px green;
+  height: 20px;
+  width: 60px;
+  margin-top: -10px;
+  margin-left: -60px;
+  border-radius: 20%;
+  float: left;
+  background: white;
+  display: flex;
+  justify-content: center;
+  span {
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600
+  }
+}

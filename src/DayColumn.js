@@ -168,7 +168,15 @@ class DayColumn extends React.Component {
           <div
             className="rbc-current-time-indicator"
             style={{ top: `${this.state.timeIndicatorPosition}%` }}
-          />
+          >
+            <div className="rbc-current-time-indicator-shape">
+              <span>
+                {this.props
+                  .getNow()
+                  .toLocaleTimeString([], { timeStyle: 'short' })}
+              </span>
+            </div>
+          </div>
         )}
       </div>
     )
